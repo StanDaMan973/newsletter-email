@@ -1,0 +1,975 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=s, initial-scale=1.0">
+  <title>Newsletter Email</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=DM+Sans:wght@400;500;700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="/fonts/Capsuula.ttf">
+
+  <style>
+    .season ul li::marker {
+      font-size: 150%;
+      color: #000;
+      unicode-bidi: isolate;
+      font-variant-numeric: tabular-nums;
+      text-transform: none;
+      text-indent: 0px !important;
+      text-align: start !important;
+      text-align-last: start !important;
+    }
+
+
+    @media only screen and (min-width:960px) {
+      .header img {
+        width: 100% !important;
+        max-width: 20px !important;
+      }
+
+      .container {
+        width: 600px !important;
+        padding: 0 !important;
+      }
+
+
+
+
+    }
+
+    @media only screen and (max-width:960px) {
+      .container {
+        width: 600px !important;
+        padding: 0 !important;
+      }
+
+    }
+
+
+    @media only screen and (max-width:600px) {
+
+
+      .container {
+        width: 100% !important;
+        padding: 0 !important;
+      }
+
+
+      .header .disclosures {
+        font-size: 15px !important;
+      }
+
+
+      .header img {
+        width: 100% !important;
+        max-width: 20px !important;
+      }
+
+      .snacks img {
+        width: 100% !important;
+        max-width: 250px !important;
+      }
+
+      .wallstreet img {
+        width: 100% !important;
+        max-width: 400px !important;
+      }
+
+      .wallstreet p {
+        font-size: 12px !important;
+      }
+
+
+      .market .number-table {
+        width: 100% !important;
+        max-width: 250px !important;
+        padding: 0 !important;
+        margin-bottom: 15px !important;
+      }
+
+      .market .number-table .left {
+        margin-bottom: 5px;
+      }
+
+      .week-highlights {
+        padding: 5px !important;
+        word-wrap: break-word !important;
+      }
+
+      .last-week p {
+        padding: 0px 0px 20px 0px !important;
+      }
+
+      .season {
+        padding: 5px !important;
+        word-wrap: break-word !important;
+      }
+
+      .events {
+        padding: 5px !important;
+        word-wrap: break-word !important;
+      }
+
+
+      .zoom {
+        padding: 5px !important;
+        word-wrap: break-word !important;
+      }
+
+      .ICYMI {
+        padding: 5px !important;
+        word-wrap: break-word !important;
+      }
+
+      .what {
+        padding: 5px !important;
+        word-wrap: break-word !important;
+      }
+
+      .daily {
+        padding: 5px !important;
+        word-wrap: break-word !important;
+      }
+
+      .fact {
+        padding: 5px !important;
+        word-wrap: break-word !important;
+      }
+
+      .footer {
+        padding: 5px !important;
+        word-wrap: break-word !important;
+      }
+
+
+
+    }
+  </style>
+</head>
+
+<body>
+
+
+
+
+
+  <!-- start of email -->
+  <table width="100%" borders="0" cellspacing="0" cellpadding="0">
+    <tr>
+      <td>
+        <!-- start of container  -->
+        <table class="container" width="600px" align="center" borders="0" cellspacing="0" cellpadding="0"
+          style="background: white; font-family: 'Capsuula', sans-serif; padding: 10px;">
+
+          <!-- start of header section -->
+          <tr>
+            <td>
+              <table class="header" width="100%" align="center" borders="0" cellspacing="0" cellpadding="0">
+                <tr>
+                  <td style="padding: 5px 0px 0px 12px;">
+                    <a href="#" class="logo" style="text-decoration: none; outline: none;">
+                      <img src="/img/rh-logo.png" alt="robinhood logo">
+                    </a>
+                  </td>
+                  <td style="padding: 0px 12px 0px 5px;">
+                    <a href="https://sg.robinhood.com/ls/click?upn=6fntGirSE5selsQKrSSUHhlVHSZUg2RjnmzAANAYlJXYYgyWQ1sztkfLzoo9man-2BnTE7sfoTf0nk2D4ybnWwXUaGtIXLarNykaHXP7nvvT7OHEZsbHIJzKPYGG6swxeTLGKj_JE2rf6N1ZboNPrm17fQ4Ht6j-2Fkc0vFexZH2stbAoLVgGJiU3LVU9uhikZjXICC6uucZDPN4TnM8XBNXoIw2Yv-2FmPgKRP4FHQgsOlokk5bt76UBfptKvb0GQeqFHyf3JRP3N838bfKzbguXlkoKa-2F5AUtKlW5Eil6A5EfCI-2FaqE80o20Al9x0A2Gjz84gxEo1SWPQgrC40VsoU5B-2Btuj6b46ZYyuMrQBgBDqB5A5GdbKmcqHy5zZKk2pOZvHKiXioeYbR1EkPsYl1iYEgfOgAF9bn03LUwMEU1hqiqTuf0-2BHgPyy-2FA-2B4iQne0Lcf2pTVc7JMLDCH06aAWJ6TN9UHytSI82zvFyw73cVKwRcpJkVae9d5riS2MEewpZ3eT2TME16ThxeYv27RIBH1eRETHjHuIVjzO9kKlT13ubeCuS4y5SE133clJMTgsv9MHAPrrcHOAcoqVOIDHis2vwsJ3bqXk-2B31vEoy71VRzhbGl3MZf2S3XNhR945ZXoicCk9jB665Ul0Y9thqhn-2BczNiZP4deOH8ukQ7Vtr2850cnP-2B-2FVeaGUHxnOzeKtzSb5n5RPOp1zLH4fK5bQN3K-2FpfQnFjC9IzLgqPOknIrTm7Bl7BZaEisDOKFOAiyI-2FUXy0-2BDsGajJBM6XJ-2FeXZL03y09x-2BREU-2Bvj3NkZ4vHTtQtAURioA-3D"
+                      style="float: right; color: rgb(0,200,5); text-decoration: underline; font-weight: bold; text-transform: capitalize; font-size: 13px; font-family: 'Capsuula', sans-serif;"
+                      class="disclosures" alt="disclosures" target="_blank">disclosures</a>
+                  </td>
+                </tr>
+              </table>
+            </td>
+          </tr>
+          <!-- end of header section -->
+
+
+
+          <!-- start of snacks section -->
+          <tr>
+            <td style="padding: 0px 12px;">
+              <table class="snacks" width="100%" align="center" borders="0" cellspacing="0" cellpadding="0">
+                <tr>
+                  <td align="center">
+                    <img src="/img/rh-logo2.png" alt="robinhood logo" style="width: 300px; padding:30px 0px;">
+                  </td>
+                </tr>
+              </table>
+            </td>
+          </tr>
+          <!-- end of snacks section -->
+
+
+          <!-- start of wallstreet section -->
+          <tr>
+            <td>
+              <table class="wallstreet" align="center" borders="0" cellspacing="0" cellpadding="0">
+
+                <tr>
+                  <td align="center">
+                    <img src="/img/wallstreet.jpg" alt="wallstreet-photo">
+                  </td>
+                </tr>
+
+                <tr>
+                  <td align="center">
+                    <p
+                      style="margin:0; padding:10px 0px 30px 0px; font-size: 13px; font-style: italic; font-weight: 500; letter-spacing: -0.1px; line-height: 153%; text-align: center; color: #000000;">
+                      Busy week on Wall Street (Mario Tama/Getty Images)</p>
+                  </td>
+                </tr>
+
+              </table>
+            </td>
+          </tr>
+          <!-- end of wallstreet section -->
+
+
+
+          <!-- start of market-moves section -->
+          <tr>
+            <td>
+              <table class="market" width="100%" align="center" borders="0" cellspacing="0" cellpadding="0">
+
+                <!-- start of last Week  -->
+                <tr>
+                  <td>
+                    <table class="last-week" width="100%" align="center" borders="0" cellspacing="0" cellpadding="0">
+                      <tr>
+                        <td align="center" width="100%">
+                          <p
+                            style="text-transform: capitalize; font-size: 13px; line-height: 1;text-align: center; color: #000000; font-weight: 500; margin: 0;  padding:00px 0px 30px 0px;">
+                            Last Week’s Market
+                            Moves
+                          </p>
+                        </td>
+                      </tr>
+                    </table>
+                  </td>
+                </tr>
+                <!-- end of last Week -->
+
+                <!-- start of number-table -->
+                <tr>
+                  <td>
+                    <table class="number-table" width="100%" align="center" borders="0" cellspacing="0" cellpadding="0"
+                      style="padding: 0px 40px 40px 45px;">
+
+                      <tr class="left" style="display: inline-block;">
+                        <td
+                          style="font-size: 13px; line-height: 22px; font-family: 'Capsuula', sans-serif; display: inline-block; margin-right: 20px;">
+                          <span class="number-title" style="color: #000000; font-weight: 500;">Dow Jones <br></span>
+                          <span class="numbers" style="font-weight:700">33,886 <span class="plus"
+                              style="font-weight:700; color: rgb(0,200,5); ">(+1.20%)</span></span>
+                        </td>
+
+                        <td
+                          style="font-size: 13px; line-height: 22px; font-family: 'Capsuula', sans-serif; display: inline-block; margin-right: 20px;">
+                          <span class="number-title" style="color: #000000; font-weight: 500;">S&P 500 <br></span>
+                          <span class="numbers" style="font-weight:700">4,138 <span class="plus"
+                              style="font-weight:700; color: rgb(0,200,5); ">(+0.79%)</span></span>
+                        </td>
+                      </tr>
+
+                      <tr class="right" style="display: inline-block;">
+                        <td
+                          style="font-size: 13px; line-height: 22px; font-family: 'Capsuula', sans-serif; display: inline-block; margin-right: 20px;">
+                          <span class="number-title" style="color: #000000; font-weight: 500;">Nasdaq <br></span>
+                          <span class="numbers" style="font-weight:700">12,123 <span class="plus"
+                              style="font-weight:700; color: rgb(0,200,5); ">(+0.29%)</span></span>
+                        </td>
+
+                        <td
+                          style="font-size: 13px; line-height: 22px; font-family: 'Capsuula', sans-serif; display: inline-block;margin-right: 20px;">
+                          <span class="number-title" style="color: #000000; font-weight: 500;">Bitcoin <br></span>
+                          <span class="numbers" style="font-weight:700">$30,474 <span class="plus"
+                              style="font-weight:700; color: rgb(0,200,5); ">(+8.67%)</span></span>
+                        </td>
+                      </tr>
+
+                    </table>
+                  </td>
+                </tr>
+                <!-- end of number-table -->
+              </table>
+            </td>
+          </tr>
+          <!-- end of market-moves section -->
+
+
+          <!-- start of week-highlights section -->
+          <tr>
+            <td style="font-family: 'DM Sans', sans-serif;">
+              <table class=" week-highlights" width="100%" align="center" borders="0" cellspacing="0" cellpadding="0">
+
+                <tr>
+                  <td style="font-weight: 400; color: #000000; font-size: 15px;">
+                    <span class="title" style="font-weight: bold;">Hey Snackers,</span>
+                    <p style="line-height: 23px;">
+                      AI is coming for your future — literally. The fortune-cookie industry is <a
+                        href="https://www.wsj.com/articles/ai-chatgpt-writing-messages-in-fortune-cookies-a8a0ea61"
+                        style="color: rgb(0,200,5); text-decoration: underline;  font-weight: bold;"
+                        target="_blank">debating</a>
+                      whether
+                      to
+                      use ChatGPT, instead of humans, to draft those little snippets. One AI-generated bit of
+                      wisdom said: “Your fate is written in the stars and encrypted in the clouds.” That’s deep…
+                      learning.
+                    </p>
+                    <p style="line-height: 23px;">
+                      Stocks ticked up for the week, led by the Dow, after some big banks kicked off earnings
+                      season with stronger-than-expected #s. But major indexes dipped on Friday as Fed rate-hike
+                      expectations jumped. Traders are no longer betting on a breather in May.
+                    </p>
+
+                    <p style="line-height: 23px;">
+                      <span class="btw" style="font-weight: 700;">Btw...</span> Do you want to start getting Snacks
+                      daily? Or prefer to unsubscribe? Manage your
+                      subscription preferences <a
+                        href="https://sherwoodmedia.com/snacks/subscriptions/manage/?token_1=32f0605b-1ed0-4f35-b5d2-eff5d4cf37b7&token_2="
+                        style="color: rgb(0,200,5); text-decoration: underline;  font-weight: bold;"
+                        target="_blank">here</a>
+                    </p>
+                  </td>
+                </tr>
+
+                <tr>
+                  <td align="center"
+                    style="font-size:0px;padding:10px 25px;padding-top:5px;padding-right:0;padding-bottom:24px;padding-left:0;word-break:break-word">
+                    <p style="border-top:solid 1px #e3e9ed;font-size:1px;margin:0px auto;width:100%"></p>
+                  </td>
+                </tr>
+
+              </table>
+            </td>
+          </tr>
+          <!-- end of week-highlights section -->
+
+
+          <!-- start of season section -->
+          <tr>
+            <td>
+              <table class="season" width="100%" align="center" borders="0" cellspacing="0" cellpadding="0">
+                <tr>
+                  <td style="padding-bottom: 20px;">
+                    <span class="button"
+                      style="background-color: rgb(195,245,60);
+                    display: inline-block; color: #000000; padding: 6px 19px; border-radius: 30px; font-family: 'DM Sans', sans-serif; font-weight: 700; letter-spacing: 0.03em; text-transform: uppercase;">SZN</span>
+                    <p
+                      style="font-size: 24px;font-weight: 600;line-height: 32px; text-align: left; color: #000000; font-family: 'DM Sans', sans-serif">
+                      Earnings-season forecasts are dim for America’s biggest companies as profits get pressured
+                    </p>
+
+                    <p
+                      style="font-size: 15px; font-weight: 400; line-height: 25px; text-align: left; color: #000000; font-family: 'DM Sans', sans-serif">
+                      <strong>’Tis the season…</strong> but it may not be so jolly. Earnings season is upon us, and
+                      expectations aren’t high for the first-quarter stocking. Quarterly profits from S&amp;P 500
+                      companies are expected to have dropped 6.8% from last year — that would be the sharpest earnings
+                      decline since lockdown-era 2020 and the second straight quarter of falling profit. Meanwhile,
+                      analysts expect that sales inched up a measly 1.8%. But the kickoff to earnings season pleasantly
+                      surprised:
+                    </p>
+
+                    <ul style="padding-left: 18px; margin: 12px 0px 12px 12px; font-size: 15px; line-height: 25px;">
+                      <li style="margin-left: 15px; margin-bottom: 12px;">
+                        <strong>Bank buster:</strong> on friday
+                        <strong>JPMorgan Chase</strong>and
+                        <strong>Citi</strong> reported stronger-than-expected #s, with JPM posting record revenue and a
+                        50% profit surge on higher interest rates.
+                      </li>
+
+                      <li style="margin-left: 16px; margin-bottom: 12px; font-size: 15px; line-height: 25px;">
+                        <strong>Stocking stuffer:</strong> Despite less-than-stellar earnings expectations, the S&amp;P
+                        500 is up 8% for the year, while the techy Nasdaq has gained 17%.
+                      </li>
+                    </ul>
+
+                    <p
+                      style="font-size: 15px; font-weight: 400; line-height: 25px; text-align: left; color: #000000; font-family: 'DM Sans', sans-serif">
+                      <strong>Growth at all costs &lt; profit at <em>less</em> cost</strong>... Soaring interest rates
+                      and
+                      sticky inflation have eaten into profits and cooled demand. Cue: companies are shifting away from
+                      growth-driven investments to focus on cost-cutting profit boosters. It’s “the year of efficiency,”
+                      Meta CEO Zuck says. Corporate titans are tightening their belts to prep for a downturn. Last week
+                      the Fed said it expected that the banking-crisis fallout would tip the US into a recession this
+                      year.
+                      surprised:
+                    </p>
+
+                    <ul style="padding-left: 18px; padding-bottom: 18px; margin: 12px 0px 12px 12px; font-size: 15px;">
+                      <li style="margin-left: 15px; margin-bottom: 12px; line-height: 25px;">
+                        <strong>Cold-brew cuts:</strong> In addition to sweeping layoffs, companies like Meta
+                        <strong>Goldman Sachs</strong> and
+                        <strong>Salesforce</strong> have cut cushy employee perks like barista-brewed coffee.
+                        <strong>Google</strong> is swapping pricey MacBooks for Chromebooks.
+
+                      </li>
+                      <li style="margin-left: 16px; margin-bottom: 12px; font-size: 15px; line-height: 25px;">
+                        <strong>Robo-savings:</strong> Companies like <strong>Disney</strong> and
+                        <strong>Microsoft</strong> are backtracking on big bets like the metaverse. Instead,
+                        corporations are investing in things that could reduce costs long term (think:
+                        <strong>Walmart</strong> and <strong>Amazon</strong> leaning into warehouse automation).
+                      </li>
+                    </ul>
+
+                    <p
+                      style="margin:0; font-weight: 700; width: 100%; padding:10px 10px 15px 0px; height: 17px; line-height: 0;">
+                      <img src="/img/paperplane.png" alt="paperplane" height="17px" width="17px"
+                        style="padding-right: 5px;"> THE
+                      TAKEAWAY
+                    </p>
+
+                    <p
+                      style="margin:0; font-size: 15px; font-weight: 400; line-height: 25px; text-align: left; color: #000000; font-family: 'DM Sans', sans-serif">
+                      <strong>"How low will you go” is the question… </strong>on investors’ lips. They’ll be listening
+                      for guidance about how much lower corporate profits could fall. If companies signal further
+                      declines ahead, this year’s rally could reverse. But if cost-cutting measures start to show up on
+                      earnings reports as improving profits, markets could be pleasantly surprised.
+                    </p>
+                  </td>
+                </tr>
+
+
+                <tr>
+                  <td align="center"
+                    style="font-size:0px;padding:10px 25px;padding-top:5px;padding-right:0;padding-bottom:24px;padding-left:0;word-break:break-word">
+                    <p style="border-top:solid 1px #e3e9ed;font-size:1px;margin:0px auto;width:100%"></p>
+                  </td>
+                </tr>
+              </table>
+
+            </td>
+          </tr>
+          <!-- end of season section-->
+
+          <!-- start of events section -->
+          <tr>
+            <td>
+              <table class="events" width="100%" align="center" borders="0" cellspacing="0" cellpadding="0">
+                <tr>
+                  <td style="padding-bottom: 15px;">
+                    <span class="button"
+                      style="background-color: rgb(195,245,60);
+                      display: inline-block; color: #000000; padding: 6px 19px; border-radius: 30px; font-family: 'DM Sans', sans-serif; font-weight: 700; letter-spacing: 0.03em; text-transform: uppercase;">Events</span>
+                    <p
+                      style="font-size: 24px;font-weight: 600;line-height: 32px; text-align: left; color: #000000; font-family: 'DM Sans', sans-serif">
+                      Coming up this week
+                    </p>
+
+                    <p
+                      style="font-size: 15px; font-weight: 400; line-height: 25px; text-align: left; color: #000000; font-family: 'DM Sans', sans-serif">
+                      <strong>Biscoff cookies en route to Cabo… United Airlines</strong> and <strong>Alaska Air</strong>
+                      may have reason to join the spring-break party when they report this week. While US airline fares
+                      are up 17% on the year, travel demand is still taking off. The TSA's expecting a record-breaking
+                      year for flights, and analysts think this may be airlines' busiest spring ever. Last week Delta
+                      unloaded a quarterly loss, but projected strong growth and profit ahead. It expects record advance
+                      summer bookings as consumers prioritize delayed <a href="#"
+                        style="color: rgb(0,200,5); text-decoration: underline;  font-weight: bold;">YOLO
+                        experiences.</a>
+                    </p>
+
+
+                    <p
+                      style="font-size: 15px; font-weight: 400; line-height: 25px; text-align: left; color: #000000; font-family: 'DM Sans', sans-serif">
+                      <strong>It’s finally here… </strong>Tuesday is the deadline to file tax returns for most Americans
+                      (many residents of CA, GA, and AL have until October). And it may be the last go-around for what
+                      you could call “IRS 1.0.” Over the next two years, the IRS will use billions in federal funding to
+                      upgrade its ’60s-era tech and hire 20K new employees. For you: faster returns and shorter phone
+                      wait times. Next tax year, the IRS will require anyone earning $600+ on payment apps (for goods
+                      and services — not from splitting checks) like Venmo to report it.
+                    </p>
+
+                  </td>
+                </tr>
+
+
+                <tr>
+                  <td align="center"
+                    style="font-size:0px;padding:10px 25px;padding-top:5px;padding-right:0;padding-bottom:24px;padding-left:0;word-break:break-word">
+                    <p style="border-top:solid 1px #e3e9ed;font-size:1px;margin:0px auto;width:100%"></p>
+                  </td>
+                </tr>
+              </table>
+
+            </td>
+          </tr>
+          <!-- end of events section-->
+
+          <!-- start of zoom out section -->
+          <tr>
+            <td>
+              <table class="zoom" width="100%" align="center" borders="0" cellspacing="0" cellpadding="0">
+                <tr>
+                  <td style="padding-bottom: 15px;">
+                    <span class="button"
+                      style="background-color: rgb(195,245,60);
+                      display: inline-block; color: #000000; padding: 6px 19px; border-radius: 30px; font-family: 'DM Sans', sans-serif; font-weight: 700; letter-spacing: 0.03em; text-transform: uppercase;">zoom
+                      out</span>
+                    <p
+                      style="font-size: 24px;font-weight: 600;line-height: 32px; text-align: left; color: #000000; font-family: 'DM Sans', sans-serif">
+                      Stories we’re watching
+                    </p>
+
+                    <p
+                      style="font-size: 15px; font-weight: 400; line-height: 25px; text-align: left; color: #000000; font-family: 'DM Sans', sans-serif">
+                      <strong>An apple a day… </strong> keeps the bills away. More Americans could see a boost in their
+                      credit scores after credit agencies scrapped 70% of all medical debt in collections. Last year,
+                      keeps the bills away. More Americans could see a boost in their credit scores after credit
+                      agencies scrapped 70% of all medical debt in collections. Last year, keeps the bills away. More
+                      Americans could see a boost in their credit scores after credit agencies scrapped 70% of all
+                      medical debt in collections. Last year, <strong>Experian, </strong> <strong>TransUnion,</strong>
+                      and <strong>Equifax</strong> removed already paid
+                      medical debt from millions of credit reports. Last week they took it a step further by removing
+                      all unpaid debt up to $500. Nearly a tenth of US adults owe at least $250 in medical debt, but
+                      many don’t notice until it dings their credit score. The move could provide relief at a time when
+                      US households carry record debt.
+                    </p>
+
+
+                    <p
+                      style="font-size: 15px; font-weight: 400; line-height: 25px; text-align: left; color: #000000; font-family: 'DM Sans', sans-serif">
+                      <strong>It’s finally here… </strong>Votes will be counted today to see if the Writers Guild of
+                      America will strike in the event that a new contract agreement isn’t reached with studios by May
+                      1. If the WGA strikes, we could see a repeat of the last screenwriting stoppage in 2007, which
+                      lasted 100 days. On the table: shortened TV seasons, cancellations, and a bump in unscripted
+                      content (imagine: more “Love Is Blind”). A strike would be a headache for streamers who are hungry
+                      for the next “Succession.” They’re expected to splurge $23.4B on scripted titles this year.
+                    </p>
+                  </td>
+                </tr>
+
+
+                <tr>
+                  <td align="center"
+                    style="font-size:0px;padding:10px 25px;padding-top:5px;padding-right:0;padding-bottom:24px;padding-left:0;word-break:break-word">
+                    <p style="border-top:solid 1px #e3e9ed;font-size:1px;margin:0px auto;width:100%"></p>
+                  </td>
+                </tr>
+              </table>
+
+            </td>
+          </tr>
+          <!-- end of zoom out section-->
+
+          <!-- start of ICYMI section -->
+          <tr>
+            <td>
+              <table class="ICYMI" width="100%" align="center" borders="0" cellspacing="0" cellpadding="0">
+                <tr>
+                  <td style="padding-bottom: 20px;">
+
+                    <span class="button"
+                      style="background-color: rgb(195,245,60);
+                              display: inline-block; color: #000000; padding: 6px 19px; border-radius: 30px; font-family: 'DM Sans', sans-serif; font-weight: 700; letter-spacing: 0.03em; text-transform: uppercase;">ICYMI</span>
+                    <p
+                      style="font-size: 24px;font-weight: 600;line-height: 32px; text-align: left; color: #000000; font-family: 'DM Sans', sans-serif">
+                      Last week's highlights
+                    </p>
+
+                    <ul style="padding-left: 18px; margin: 12px 0px 12px 12px; font-size: 15px;">
+
+                      <li style="margin-left: 15px; margin-bottom: 12px; line-height: 25px;">
+                        <a href="https://sherwoodmedia.com/snacks/newsletters/1UaryfLlNYafGqkVnZiU00/articles/4pzAi33V9xaok1Q7KIh3Rt/"
+                          style="color: rgb(0,200,5); text-decoration: underline; font-weight:
+                          bold;" target="_blank">Stuck:</a> <strong>Amazon's</strong> $1.7B deal to buy Roomba maker
+                        iRobot is
+                        gathering
+                        dust
+                        as the FTC gets
+                        tougher on mergers. As antitrust gets anti-er, companies might think twice before snagging
+                        startups.
+                      </li>
+
+                      <li style="margin-left: 15px; margin-bottom: 12px; line-height: 25px;">
+                        <a href="https://sherwoodmedia.com/snacks/newsletters/Ku8oHOygOUFBElNxmnQHt/articles/2e3J0mmmxTJv7LWksc4Fd7/"
+                          style="color: rgb(0,200,5); text-decoration: underline; font-weight:
+                          bold;" target="_blank">Oops:</a> <strong>Samsung </strong> $1.7B deal to buy Roomba maker
+                        iRobot is
+                        workers reportedly leaked secret company info while asking ChatGPT for help. Nearly half of
+                        companies (and the Biden admin) are exploring guidelines for AI-chatbot usage.
+
+                      </li>
+
+
+                      <li style="margin-left: 15px; margin-bottom: 12px; line-height: 25px;">
+                        <a href="https://sherwoodmedia.com/snacks/newsletters/3ITpC4k9Ogb756gLlOX7Ht/articles/3QQUl0m7n653lLXE6UcpIp/"
+                          style="color: rgb(0,200,5); text-decoration: underline; font-weight:
+                          bold;" target="_blank">Volt:</a> <strong>Tesla's</strong> $1.7B deal to buy Roomba maker
+                        iRobot is
+                        Tesla's building a Shanghai “Megapack” plant to build more energy-storage solutions for
+                        businesses and homes. Rising energy demand could fuel Elon’s biz as EV growth slows.
+                      </li>
+
+                    </ul>
+                  </td>
+                </tr>
+
+
+                <tr>
+                  <td align="center"
+                    style="font-size:0px;padding:10px 25px;padding-top:5px;padding-right:0;padding-bottom:24px;padding-left:0;word-break:break-word">
+                    <p style="border-top:solid 1px #e3e9ed;font-size:1px;margin:0px auto;width:100%"></p>
+                  </td>
+                </tr>
+              </table>
+            </td>
+          </tr>
+          <!-- end of ICYMI section-->
+
+
+          <!-- start of What section -->
+          <tr>
+            <td>
+              <table class="What" width="100%" align="center" borders="0" cellspacing="0" cellpadding="0">
+                <tr>
+                  <td style="padding-bottom: 10px;">
+
+
+                    <p
+                      style="font-size: 24px;font-weight: 600;line-height: 32px; text-align: left; color: #000000; font-family: 'DM Sans', sans-serif">
+                      What else we're Snackin'
+                    </p>
+
+                    <ul style="padding-left: 18px; margin: 12px 0px 12px 12px; font-size: 15px;">
+
+                      <li style="margin-left: 15px; margin-bottom: 12px; line-height: 25px;">
+                        <a href="https://www.nytimes.com/2023/04/11/magazine/return-to-office-consultants.html" style="color: rgb(0,200,5); text-decoration: underline; font-weight:
+                          bold;" target="_blank">RTO:</a> Niche consultants attempting to get WFH’ers back to
+                        the office without a morale plunge are imploring execs to ditch return-to-office mandates in
+                        favor of communal perks like yoga and lunch.
+                      </li>
+
+                      <li style="margin-left: 15px; margin-bottom: 12px; line-height: 25px;">
+                        <a href="https://www.bloomberg.com/opinion/articles/2023-04-10/virtual-romance-is-fueling-china-s-ai-revolution#xj4y7vzkg"
+                          style="color: rgb(0,200,5); text-decoration: underline; font-weight:
+                          bold;" target="_blank">Emote:</a> Lots of young Chinese men have grown emotionally attached
+                        to AI companions
+                        like Microsoft's spinoff Xiaoice, which had 650M users in 2018. Robo-romances could give China a
+                        leg up in the AI race.
+
+                      </li>
+
+
+                      <li style="margin-left: 15px; margin-bottom: 12px; line-height: 25px;">
+                        <a href="https://www.washingtonpost.com/climate-environment/2023/04/12/biden-auto-emissions-rules-climate/"
+                          style="color: rgb(0,200,5); text-decoration: underline; font-weight:
+                          bold;" target="_blank">Exhausted:</a> The EPA’s new pollution-standards proposal that seeks
+                        to limit tailpipe
+                        emissions could speed up the EV transition. It would require up to 67% of all new cars sold in
+                        the US to be electric by 2032.
+                      </li>
+                    </ul>
+                  </td>
+                </tr>
+              </table>
+            </td>
+          </tr>
+          <!-- end of What section-->
+
+          <!-- start of daily section-->
+          <tr>
+            <td>
+              <table class="daily" width="100%" align="center" borders="0" cellspacing="0" cellpadding="0">
+                <tr style="background:#f5f8fa; width: 600px; height:auto;">
+                  <td style="padding: 24px 24px 24px 24px;; word-break: break-word;">
+                    <h3
+                      style="font-size: 24px;font-weight: 600;line-height: 32px; text-align: left; color: #000000; margin: 0;">
+                      Want your Snacks daily?
+                    </h3>
+                    <p
+                      style="margin:0; font-weight: 700; width: 100%; padding:10px 10px 15px 0px; height: 17px; line-height: 0;">
+                      <img src="/img/book.png" alt="book" style="padding-right:
+                        5px; width: 17px; height: 17px;">The
+                      Daily
+                      Newsletter
+                    </p>
+                    <p style="font-size: 15px; margin:0; padding-top: 5px; padding-bottom: 15px;">Get fresh takes on
+                      financial news every
+                      week day. Try a sample:
+                    </p>
+
+                    <div style="padding-bottom: 5px;">
+                      <a href="https://sherwoodmedia.com/snacks/newsletters/1UaryfLlNYafGqkVnZiU00/"
+                        style="color: rgb(0,200,5); text-decoration: underline;  font-weight: bold;"
+                        target="_blank"><img src="/img/plane.png" alt="sharwood-media-article-delayed-YOLO" width="17px"
+                          height="17px" style="vertical-align:middle; padding-right:5px;"> Delta’s
+                        delayed
+                        YOLO
+                      </a>
+                      <span>&#x2022; Apr 14, 2023</span>
+                    </div>
+
+                    <div style="padding-bottom: 5px;">
+                      <a href="https://sherwoodmedia.com/snacks/newsletters/4kYz28r5Anmah0XmXU8fgK/"
+                        style="color: rgb(0,200,5); text-decoration: underline;  font-weight: bold;"
+                        target="_blank"><img src="/img/house.png" alt="the0great-rate-hike-article" width="17px"
+                          height="17px" style="vertical-align:middle; padding-right:5px;">
+                        The great rate-hike divide
+                      </a>
+                      <span>&#x2022; Apr 13, 2023</span>
+                    </div>
+
+                    <div style="padding-bottom: 20px;">
+                      <a href="https://sherwoodmedia.com/snacks/newsletters/Ku8oHOygOUFBElNxmnQHt/"
+                        style="color: rgb(0,200,5); text-decoration: underline;  font-weight: bold;"
+                        target="_blank"><img src="/img/suitcase.png" alt="chatgpt-article" width="17px" height="17px"
+                          style="vertical-align:middle; padding-right:5px;">
+                        ChatGPT clocks in
+                      </a>
+                      <span>&#x2022; Apr 12, 2023</span>
+                    </div>
+
+                    <div>
+                      <a href="https://sherwoodmedia.com/snacks/subscriptions/manage/?token_1=32f0605b-1ed0-4f35-b5d2-eff5d4cf37b7&token_2=&subscribe-daily=1"
+                        style="display: inline-block; background: #000000;color: #ffffff;font-family: 'Capsule Sans Text',Arial; font-size: 15px;  font-weight: 700; line-height: 24px;  letter-spacing: -0.1px; margin: 0; text-decoration: none; text-transform: none; padding: 10px 30px; border-radius: 30px;"
+                        target="_blank">Subscribe
+                        to the Daily</a>
+                    </div>
+
+
+                  </td>
+                </tr>
+              </table>
+            </td>
+          </tr>
+
+          <!-- end of daily section-->
+
+          <!-- start of Fact section-->
+          <tr>
+            <td>
+              <table class="fact" width="100%" align="center" borders="0" cellspacing="0" cellpadding="0"
+                style="padding-top: 40px; padding-bottom: 10px;">
+                <tr>
+                  <td>
+                    <h2
+                      style="font-size: 24px;font-weight: 600;line-height: 32px; text-align: left; color: #000000; margin: 0;">
+                      Snack Fact Of the Day
+                    </h2>
+
+                    <p
+                      style="color: rgb(0,200,5); font-size: 24px; font-weight: 500;letter-spacing: -0.33px; line-height: 32px; text-align: left;">
+                      In nearly half of US marriages, women earn about the same as their spouse — or more
+                    </p>
+
+                    <a href="https://www.pewresearch.org/social-trends/2023/04/13/in-a-growing-share-of-u-s-marriages-husbands-and-wives-earn-about-the-same/"
+                      style="color: rgb(0,200,5); text-decoration: underline;  font-weight: bold;" target="_blank">Read
+                      More</a>
+                  </td>
+                </tr>
+              </table>
+
+          <tr>
+            <td align="center"
+              style="font-size:0px;padding:10px 25px;padding-top:20px;padding-right:0;padding-bottom:24px;padding-left:0;word-break:break-word">
+              <p style="border-top:solid 1px #e3e9ed;font-size:1px;margin:0px auto;width:100%"></p>
+            </td>
+          </tr>
+      </td>
+    </tr>
+    <!-- end of Fact section-->
+
+
+    <!-- start of What section -->
+    <tr>
+      <td>
+        <table class="what" width="100%" align="center" borders="0" cellspacing="0" cellpadding="0">
+          <tr>
+            <td style="padding-bottom: 5px;">
+
+
+              <p style="font-size: 24px;font-weight: 600;line-height: 32px; text-align: left; color: #000000;">
+                This Week
+              </p>
+
+              <ul style="padding-left: 18px; margin: 12px 0px 12px 12px; font-size: 15px;">
+
+                <li style="margin-left: 15px; margin-bottom: 12px;">
+                  <p style="color: #000000; text-decoration: none;"><strong>Monday:</strong> Earnings expected
+                    from <strong>
+                      Charles Schwab</strong>
+                  </p>
+                </li>
+
+                <li style="margin-left: 15px; margin-bottom: 12px;">
+                  <p style="text-decoration: none;"><strong>Tuesday:</strong> Tax Day. Earnings expected from
+                    <strong> United
+                      Airlines,
+                      Bank of America, BNY Mellon, Johnson & Johnson, Goldman Sachs</strong>, and
+                    <strong>Lockedheed Martin</strong>
+                  </p>
+                </li>
+
+
+
+
+                <li style="margin-left: 15px; margin-bottom: 12px;">
+                  <p href="#" style="text-decoration: none;"><strong>Wednesday:</strong> Earnings expected from
+                    <strong> UMorgan Stanley, Ally Financial, Citizens Financial</strong>, and
+                    <strong>Abbott</strong>
+                  </p>
+                </li>
+
+
+
+
+                <li style="margin-left: 15px; margin-bottom: 12px;">
+                  <p href="#" style="text-decoration: none;"><strong>Thursday:</strong> Earnings expected from
+                    <strong> AT&T, TSMC, American Express, Alaska Air</strong>, and <strong>Union Pacific</strong>
+                  </p>
+                </li>
+
+
+
+                <li style="margin-left: 15px; margin-bottom: 12px;">
+                  <p href="#" style="text-decoration: none;"><strong>Friday:</strong> Tax Day. Earnings expected from
+                    <strong> Earnings expected from</strong>, <strong>Procter & Gamble</strong>
+                  </p>
+                </li>
+              </ul>
+
+              <p style="padding-left: 10px; font-size: 15px;
+              font-weight: 400;
+              letter-spacing: -0.1px;
+              line-height: 24px;
+              text-align: left;
+              color: #000000;">Authors of this Snacks own shares: of Amazon, Alaska Air, Google, Delta,
+                Disney,
+                Tesla, Microsoft,
+                and Walmart</p>
+
+              <p style="padding-left: 10px; font-size: 15px;
+                font-weight: 400;
+                letter-spacing: -0.1px;
+                line-height: 24px;
+                text-align: left;
+                color: #000000;">ID: 2848334</p>
+            </td>
+          </tr>
+
+          <tr>
+            <td align="center"
+              style="font-size:0px;padding:10px 25px;padding-top:20px;padding-right:0;padding-bottom:24px;padding-left:0;word-break:break-word">
+              <p style="border-top:solid 1px #e3e9ed;font-size:1px;margin:0px auto;width:100%"></p>
+            </td>
+          </tr>
+        </table>
+      </td>
+    </tr>
+    <!-- end of What section-->
+
+    <!-- start of footer section -->
+    <tr>
+      <td>
+        <table class="footer" width="100%" align="center" borders="0" cellspacing="0" cellpadding="0">
+          <tr>
+            <td>
+              <div style="text-align: center;">
+                <a href="https://www.instagram.com/robinhoodsnacks/" style="text-decoration: none;" target="_blank">
+                  <img src="/img/instagram.png" alt="instagram" style="height: auto; width: 50px;">
+                </a>
+                <a href="https://twitter.com/RobinhoodSnacks" style="text-decoration: none;" target="_blank">
+                  <img src="/img/twitter.png" alt="twitter" style="height: auto; width: 50px;">
+                </a>
+              </div>
+
+              <p
+                style="font-family: 'Capsuula', sans-serif; font-size:9px;font-weight:400;letter-spacing:-0.1px;line-height:20px;text-align:left;color:rgb(106,114,120)">
+                Robinhood Snacks newsletters reflect the opinions of only the authors who are associated persons of
+                Robinhood Financial LLC (Member <a
+                  href="https://sg.robinhood.com/ls/click?upn=6fntGirSE5selsQKrSSUHtLDZVoyATNGm6OcXRelb2E-3DjeOq_JE2rf6N1ZboNPrm17fQ4Ht6j-2Fkc0vFexZH2stbAoLVgGJiU3LVU9uhikZjXICC6uucZDPN4TnM8XBNXoIw2Yv-2FmPgKRP4FHQgsOlokk5bt76UBfptKvb0GQeqFHyf3JRP3N838bfKzbguXlkoKa-2F5AUtKlW5Eil6A5EfCI-2FaqE80o20Al9x0A2Gjz84gxEo1SWPQgrC40VsoU5B-2Btuj6b46ZYyuMrQBgBDqB5A5GdbKmcqHy5zZKk2pOZvHKiXioeYbR1EkPsYl1iYEgfOgAF9bn03LUwMEU1hqiqTuf0-2BHgPyy-2FA-2B4iQne0Lcf2pTVc7JMLDCH06aAWJ6TN9UHytSI82zvFyw73cVKwRcpJkVae9d5riS2MEewpZ3eT2TMEnyYvlLNtRGjmwLbjkuYZXcRGwUdVAk0j8m3G2oGuCDpYHdyyMsnco6tvD75ifGUFgjCJykG0EqpTQWVAnvrh3jL62Kbfrc5qez3xVlGzA-2BmCWPKXDw8cRSbjEknPeaRlFI0elUwHrY8QIdYoopaoesHe5C2L-2F3fa8ghrh52fzwjS2rRT1LrB2iJeo5eSpsdlwAgF2SBy5PB21eNJEwjC4e1wDL61GbU4WawIfQa9m1HeQ2vawRIRHUBFk6jJpgvOmenR70ejZoid2a62OGhbhKqqDrW142bJPl7-2BnvppCLY-3D"
+                  style="color:rgb(0,200,5);text-decoration:none;font-weight:bold" rel="noopener" target="_blank"
+                  data-saferedirecturl="https://www.google.com/url?q=https://sg.robinhood.com/ls/click?upn%3D6fntGirSE5selsQKrSSUHtLDZVoyATNGm6OcXRelb2E-3DjeOq_JE2rf6N1ZboNPrm17fQ4Ht6j-2Fkc0vFexZH2stbAoLVgGJiU3LVU9uhikZjXICC6uucZDPN4TnM8XBNXoIw2Yv-2FmPgKRP4FHQgsOlokk5bt76UBfptKvb0GQeqFHyf3JRP3N838bfKzbguXlkoKa-2F5AUtKlW5Eil6A5EfCI-2FaqE80o20Al9x0A2Gjz84gxEo1SWPQgrC40VsoU5B-2Btuj6b46ZYyuMrQBgBDqB5A5GdbKmcqHy5zZKk2pOZvHKiXioeYbR1EkPsYl1iYEgfOgAF9bn03LUwMEU1hqiqTuf0-2BHgPyy-2FA-2B4iQne0Lcf2pTVc7JMLDCH06aAWJ6TN9UHytSI82zvFyw73cVKwRcpJkVae9d5riS2MEewpZ3eT2TMEnyYvlLNtRGjmwLbjkuYZXcRGwUdVAk0j8m3G2oGuCDpYHdyyMsnco6tvD75ifGUFgjCJykG0EqpTQWVAnvrh3jL62Kbfrc5qez3xVlGzA-2BmCWPKXDw8cRSbjEknPeaRlFI0elUwHrY8QIdYoopaoesHe5C2L-2F3fa8ghrh52fzwjS2rRT1LrB2iJeo5eSpsdlwAgF2SBy5PB21eNJEwjC4e1wDL61GbU4WawIfQa9m1HeQ2vawRIRHUBFk6jJpgvOmenR70ejZoid2a62OGhbhKqqDrW142bJPl7-2BnvppCLY-3D&amp;source=gmail&amp;ust=1682971013432000&amp;usg=AOvVaw1Hjf07CR1P3X4K5uU7utDa">SIPC</a>)
+                and do not reflect the views of Robinhood Markets, Inc. or any of its subsidiaries or affiliates. They
+                are for informational purposes only, and are not a recommendation of an investment strategy or to buy
+                or
+                sell any security, digital asset (cryptocurrency, etc) in any account. They are also not research
+                reports and are not intended to serve as the basis for any investment decision. Any third-party
+                information provided therein does not reflect the views of Robinhood Markets, Inc., Robinhood
+                Financial
+                LLC, or any of their subsidiaries or affiliates. All investments involve risk including the loss of
+                principal and past performance does not guarantee future results.
+              </p>
+
+              <div class="footer-links" style="margin-bottom: 15px;">
+                <a href="https://cdn.robinhood.com/assets/robinhood/legal/Robinhood%20Terms%20and%20Conditions.pdf"
+                  style="color:rgb(0,200,5);text-decoration:none;font-weight:bold; font-size: 9px; line-height: 20px; text-align: left;"
+                  rel="noopener" target="_blank">RobinhoodTerms and Conditions
+                </a>
+                <span style="vertical-align: middle; margin-top:10px;">&nbsp;•&nbsp;</span>
+                <a href="https://robinhood.com/us/en/about/legal/"
+                  style="color:rgb(0,200,5);text-decoration:none;font-weight:bold; font-size: 9px; line-height: 20px; text-align: left;"
+                  rel="noopener" target="_blank">Disclosure Library
+                </a>
+                <span style="vertical-align: middle;">&nbsp;•&nbsp;</span>
+                <a href="https://robinhood.com/us/en/support/articles/our-editorial-principles/"
+                  style="color:rgb(0,200,5);text-decoration:none;font-weight:bold; font-size: 9px; line-height: 20px; text-align: left;"
+                  rel="noopener" target="_blank">Our Editoral Principals
+                </a>
+                <span style="vertical-align: middle;">&nbsp;•&nbsp;</span>
+                <a href="https://robinhood.com/contact"
+                  style="color:rgb(0,200,5);text-decoration:none;font-weight:bold; font-size: 9px; line-height: 20px; text-align: left;"
+                  rel="noopener" target="_blank">Contact Us
+                </a>
+                <span style="vertical-align: middle;">&nbsp;•&nbsp;</span>
+                <a href="https://robinhood.com/us/en/support/"
+                  style="color:rgb(0,200,5);text-decoration:none;font-weight:bold; font-size: 9px; line-height: 20px; text-align: left;"
+                  rel="noopener" target="_blank">FAQ
+                </a>
+              </div>
+            </td>
+          </tr>
+
+          <tr>
+            <td>
+              <table class="Manage" width="100%" align="center" borders="0" cellspacing="0" cellpadding="0"
+                style="margin-bottom: 15px;">
+                <tr>
+                  <td>
+                    <a href="https://sherwoodmedia.com/snacks/subscriptions/manage/?token_1=32f0605b-1ed0-4f35-b5d2-eff5d4cf37b7&token_2="
+                      style="color:rgb(0,200,5);text-decoration:none;font-weight:bold; font-size: 9px; line-height: 20px; text-align: left;"
+                      rel="noopener" target="_blank">Manage Your Subscription Preferences
+                    </a>
+                  </td>
+                </tr>
+              </table>
+            </td>
+          </tr>
+
+          <tr>
+            <td>
+              <table class="unsubscribe" width="100%" align="center" borders="0" cellspacing="0" cellpadding="0">
+                <tr>
+                  <td>
+                    <p style="color:#000;text-decoration:none; font-size: 13px; line-height: 20px; text-align: left;"
+                      rel="noopener" target="_blank">To unsubscribe from all commercial emails, click <a
+                        href="https://sg.robinhood.com/wf/unsubscribe?upn=oFGOwXkf4sG-2Fx7KPNQ6ph31rJQjUwwwXZJvQnbY-2B7BCcf6jeZvyxZKcnPsvc-2Bje07AfVQo5zok8Dt4RebrB0u7AYDpEVN1WAbeaown-2BAhfLXZFWI5-2FjLCA3U1ytVRB36tlBSBdDVVRV25ud0PlD7TLx2aya9VHhZzkDS3YSmZcvFSzuY3uoOrHPppZqYs6FA6uDcPVpuBdjp5EUsef8ZK7WT-2F3zBYSh-2BsaXfmvOuKzsfGkFEWsDeIQGsSbOuQmUEQVC-2Ba3rlb3qxW4rCg034CVxoeewh55YaoLaWfKB5W3G6kWOvN2BHQr-2FZQfSpC92gq6RG-2B-2F4Qz1RkaXSTBzYfUe3JRffybnjwJV2WaDCE7b30iTOgJ8yDHfwNUQfPjE-2Fk2xGMiq5eATieR-2BsqYZCOOzx8pSQb-2BT0-2Bha7yiafYjwSh40koDEEB9j08Lqk1D4JqV4iDgZeLHpH4L316QpjXef4syemgyv3LR8OYnJzZW-2Fpyk-2B2Ql5m4xlI6TwQBbUt7z79qs26MpJvHdHuNaFfY914QZKeuXiCeNFTtRWvVaUD4RKHry7Y9NolIEIjCzi-2BbjcdpmY7eq8XMY8kiY2lKUgpz2u4XLtZvdlllmsEpGMwJc-2Fj9CxknoM-2Bow5neyRnDqK-2BbiUQzwpWDeFFqZiH5T5SQsl9H5763AGTgbASNV18WVHHT-2FLFU1SLf5iVViiVT"
+                        style="color:rgb(0,200,5);text-decoration:none;font-weight:bold; font-size: 13px; line-height: 20px; text-align: left;"
+                        target="_blank">here</a>
+                    </p>
+                  </td>
+                </tr>
+              </table>
+            </td>
+          </tr>
+
+
+        </table>
+      </td>
+    </tr>
+    <!-- end of footer section -->
+
+  </table>
+  <!-- end of container -->
+
+  </td>
+  </tr>
+
+  </table>
+  <!-- end of email -->
+
+</body>
+
+</html>
